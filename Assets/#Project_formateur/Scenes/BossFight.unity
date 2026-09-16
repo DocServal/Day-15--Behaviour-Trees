@@ -275,6 +275,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf959ff6f8d41c1997ac8a377a68314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Core.GameManager
+--- !u!1 &478768562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7559006615654855930, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
+  m_PrefabInstance: {fileID: 933768127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &808854216
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559006615654855930, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -418,7 +423,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7559006615654855929, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1904546467}
-    m_AddedComponents: []
+    - targetCorrespondingSourceObject: {fileID: 7559006615654855929, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1881466986}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7559006615654855930, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1173233108}
   m_SourcePrefab: {fileID: 100100000, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
 --- !u!1 &1106991517
 GameObject:
@@ -574,6 +585,22 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7559006615654855931, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
   m_PrefabInstance: {fileID: 933768127}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1173233108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478768562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33775e40a6ce74e4b91cd8c963f522a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationEventTrigger
+  animationEvent: {fileID: 11400000, guid: 32b5d4db5557ecb47a161dafd8d6554e, type: 2}
+  attackStart: {fileID: 11400000, guid: 703979a75484c6b46b1e6034800cd525, type: 2}
+  attackEnd: {fileID: 11400000, guid: 2e2532a6165232a44892be53bfafc8ab, type: 2}
+  rollEnd: {fileID: 11400000, guid: 2bc33c21d03f04841a25149f9524d2d5, type: 2}
 --- !u!1 &1200411951
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +652,7 @@ GameObject:
   m_IsActive: 1
 --- !u!212 &1210711718
 SpriteRenderer:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -670,6 +698,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 73ad8421f8aed0a409db545a78ea3070, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -679,8 +708,8 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &1210711719
 Transform:
   m_ObjectHideFlags: 0
@@ -762,6 +791,7 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!212 &1407522334
 SpriteRenderer:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -807,6 +837,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -816,8 +847,8 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &1407522335
 Transform:
   m_ObjectHideFlags: 0
@@ -888,14 +919,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433975969}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -940,7 +971,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -1057,6 +1088,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1074,7 +1106,7 @@ GameObject:
   - component: {fileID: 1477715772}
   - component: {fileID: 1477715773}
   - component: {fileID: 1477715776}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1109,14 +1141,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: 75831002144858980, guid: 6a1516467f13e174088c5aa9bfd83da1, type: 2}
+  m_Graph: {fileID: 75831002144858980, guid: 311e991bc04a19a4e8ec843c55f262f7, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 4645555404788990116
   - rid: 4645555404788990245
   - rid: 4645555406466974389
   - rid: 4645555406466974390
   - rid: 4645555489608040716
-  m_OriginalGraph: {fileID: 0}
+  - rid: 5216274687882690901
+  - rid: 5216274846734876987
+  - rid: 5216274846734877507
+  - rid: 5216274846734877508
+  - rid: 5216274846734877684
+  m_OriginalGraph: {fileID: 75831002144858980, guid: 311e991bc04a19a4e8ec843c55f262f7, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -1162,6 +1199,46 @@ MonoBehaviour:
           m_Value1: 3304202832614121429
         Name: Player
         m_Value: {fileID: 1969089124}
+    - rid: 5216274687882690901
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9261230984343615128
+          m_Value1: 18439379485901452399
+        Name: Mace
+        m_Value: {fileID: 1904546466}
+    - rid: 5216274846734876987
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1973767807625801569
+          m_Value1: 337841386534855491
+        Name: Maggot
+        m_Value: {fileID: 1012258441299047305, guid: 486e43c11b2bd584992a6c09819d5500, type: 3}
+    - rid: 5216274846734877507
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 4513900529391715591
+          m_Value1: 7281561785371273788
+        Name: Maggot Spawn
+        m_Value: {fileID: 1881466986}
+    - rid: 5216274846734877508
+      type: {class: 'BlackboardVariable`1[[MaggotDied, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 6583279833691433784
+          m_Value1: 9820478754722166444
+        Name: Maggot Died
+        m_Value: {fileID: 11400000, guid: c9d0e3cbe1326f946b985cf2b71d8d5f, type: 2}
+    - rid: 5216274846734877684
+      type: {class: 'BlackboardVariable`1[[Core.Hazards.Hazard, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15326703980241196430
+          m_Value1: 6078288317422397535
+        Name: Hazard
+        m_Value: {fileID: 1631075403}
 --- !u!50 &1477715773
 Rigidbody2D:
   serializedVersion: 5
@@ -1201,7 +1278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98fceafd90e4305b0e20097552cae1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Core.Bosses.BossConfig
-  bossName: Fake False Knight
+  bossName: Discount Knight
   arenaCenter: {fileID: 0}
   arenaRadius: 1
 --- !u!1 &1480175399
@@ -1246,7 +1323,8 @@ GameObject:
   - component: {fileID: 1631075400}
   - component: {fileID: 1631075401}
   - component: {fileID: 1631075402}
-  m_Layer: 6
+  - component: {fileID: 1631075403}
+  m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,6 +1412,19 @@ MonoBehaviour:
   hideWhenDead: 0
   hitMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
   health: 42
+--- !u!114 &1631075403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631075399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a293cf39b1948d6be6895fe87df033c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Core.Hazards.Hazard
+  damage: 20
 --- !u!1 &1648008498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1501,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1548,7 +1640,7 @@ PrefabInstance:
       objectReference: {fileID: 1200411952}
     - target: {fileID: 339477802832129868, guid: b6aba049213e51e4fb6c1549e4b994df, type: 3}
       propertyPath: attackLayerMask.m_Bits
-      value: 65
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 339477803513620800, guid: b6aba049213e51e4fb6c1549e4b994df, type: 3}
       propertyPath: m_Layer
@@ -1673,6 +1765,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1881466985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881466986}
+  m_Layer: 0
+  m_Name: Maggot Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1881466986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881466985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.27, y: 0.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1173233105}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1904546466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1807,7 @@ GameObject:
   - component: {fileID: 1904546467}
   - component: {fileID: 1904546469}
   - component: {fileID: 1904546468}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
