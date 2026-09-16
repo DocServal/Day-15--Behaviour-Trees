@@ -72,6 +72,7 @@ public partial class NavigateToLocationWithAnimationAction : Action
         }
 
         m_NavMeshAgent = null;
+        //m_Animator.SetTrigger("Idle");
         m_Animator = null;
     }
 
