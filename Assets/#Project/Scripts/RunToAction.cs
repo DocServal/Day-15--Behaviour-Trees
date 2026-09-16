@@ -3,6 +3,7 @@ using Unity.Behavior;
 using UnityEngine;
 using Action = Unity.Behavior.Action;
 using Unity.Properties;
+using DG.Tweening;
 
 [Serializable, GeneratePropertyBag]
 [NodeDescription(name: "Run to", story: "[Agent] run to [target]", category: "Action", id: "efee9bbf9342f54288c65f8fa129e23b")]
@@ -11,8 +12,8 @@ public partial class RunToAction : Action
     [SerializeReference] public BlackboardVariable<Transform> Agent;
     [SerializeReference] public BlackboardVariable<Vector3> Target;
 
-    [SerializeReference] public BlackboardVariable<float> speed = new BlackboardVariable<float>(5f);
-    [SerializeReference] public BlackboardVariable<string> animationTriggerName = new BlackboardVariable<string>("Run");
+    [SerializeReference] public BlackboardVariable<float> speed = new(5f);
+    [SerializeReference] public BlackboardVariable<string> animationTriggerName = new("Run");
 
 
     private Animator animator;
@@ -23,7 +24,6 @@ public partial class RunToAction : Action
     {
         animator = Agent.Value.GetComponentInChildren<Animator>();
         body = Agent.Value.GetComponent<Rigidbody2D>();
-        buildupTween = DOVirtual.DelayedCall(buildupTime.Value, StartJump, false);
         animator.SetTrigger(animationTriggerName.Value);
         return Status.Running;
     }
