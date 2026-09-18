@@ -146,6 +146,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -153,12 +166,12 @@ TextureImporter:
       name: fk-attack_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 3
         y: 636
         width: 540
         height: 574
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5656621, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,7 +193,7 @@ TextureImporter:
         width: 570
         height: 456
       alignment: 9
-      pivot: {x: 0.51057255, y: 0.0058481316}
+      pivot: {x: 0.25514236, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,7 +237,7 @@ TextureImporter:
         width: 534
         height: 340
       alignment: 9
-      pivot: {x: 0.50287825, y: 0.00066492415}
+      pivot: {x: 0.25911802, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,7 +281,7 @@ TextureImporter:
         width: 407
         height: 562
       alignment: 9
-      pivot: {x: 0.6829935, y: 0.012047659}
+      pivot: {x: 0.7299038, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,7 +303,7 @@ TextureImporter:
         width: 507
         height: 494
       alignment: 9
-      pivot: {x: 0.625914, y: 0.0039160475}
+      pivot: {x: 0.625914, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

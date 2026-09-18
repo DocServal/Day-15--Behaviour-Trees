@@ -368,7 +368,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7559006615654855929, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 7559006615654855929, guid: afc326e2bcb93ee4cbb7cf8d2ae9b097, type: 3}
       propertyPath: m_LocalPosition.y
@@ -480,7 +480,7 @@ Camera:
     x: 0
     y: 0
     width: 1
-    height: 1
+    height: 0.8
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -859,7 +859,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.38, y: -3.3752, z: 0}
-  m_LocalScale: {x: 27.909096, y: 1.8027211, z: 1}
+  m_LocalScale: {x: 400, y: 1.8027211, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1106,6 +1106,7 @@ GameObject:
   - component: {fileID: 1477715772}
   - component: {fileID: 1477715773}
   - component: {fileID: 1477715776}
+  - component: {fileID: 1477715777}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -1122,9 +1123,9 @@ Transform:
   m_GameObject: {fileID: 1477715770}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.02, y: -2.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 4.43, y: -2.33, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1173233105}
   m_Father: {fileID: 0}
@@ -1278,9 +1279,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98fceafd90e4305b0e20097552cae1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Core.Bosses.BossConfig
-  bossName: Discount Knight
+  bossName: Disco night
   arenaCenter: {fileID: 0}
   arenaRadius: 1
+--- !u!111 &1477715777
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477715770}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1480175399
 GameObject:
   m_ObjectHideFlags: 0

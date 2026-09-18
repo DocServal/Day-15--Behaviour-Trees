@@ -23,7 +23,7 @@ public partial class RunToAction : Action
     {
         animator = Agent.Value.GetComponentInChildren<Animator>();
         body = Agent.Value.GetComponent<Rigidbody2D>();
-        buildupTween = DOVirtual.DelayedCall(buildupTime.Value, StartJump, false);
+        //buildupTween = DOVirtual.DelayedCall(buildupTime.Value, StartJump, false);
         animator.SetTrigger(animationTriggerName.Value);
         return Status.Running;
     }
